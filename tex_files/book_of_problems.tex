@@ -1,5 +1,17 @@
-\documentclass{article}
+\documentclass[14pt, A4]{extarticle}
 \usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\setlength{\parindent}{0pt}
 
 \title{Book of Problems}
 \author{SUMS}
@@ -8,6 +20,67 @@
 \begin{document}
 
 \maketitle
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Preface}
+This is the SUMS Maths Space Book of Problems. It will be a repository for problems donated by SUMS members.
+\newpage
+
+\section{March 2021}
+\subsection{Density of Natural numbers mod $\pi$}
+Consider the function $f:\mathbb{N} \rightarrow [0,\pi]$ defined $\forall n$ by $f(n) = n - \floor{\frac{n}{\pi}}n$.
+
+Determine - with proof - if the following is true.\\
+
+$\forall x \in [0, \pi] \epsilon > 0 \quad \exists n \in \mathbb{N} \ \textrm{s.t} \ |f(n) - x| < \epsilon$\\
+
+You may use without proof the fact that $\pi$ is irrational
+
+\subsection{A block containing primes}
+Prove that there exists a block of $1000$ consecutive natural numbers of which exactly $10$ are prime
+
+\subsection{Primes in the Fibonacci sequence}
+The first few terms of the Fibonacci sequence are as follows\\
+$F_{1} = 1$\\
+$F_{2} = 1$\\
+$F_{3} = 2$\\
+$F_{4} = 3$\\
+$F_{5} = 5$\\
+$F_{6} = 8$\\
+$F_{7} = 13$\\
+
+Note that $F_{4} = 3$ is the $4$th number in the sequence ($4$ not a prime) but the number is $3$ (a prime number).\\
+
+Show that this is the only case in the Fibonacci sequence where a prime number has a non-prime index
+
+\subsection{Cyclogon conundrum}
+Consider a $n$ sided convex polygon resting with two vertices on a line (as exemplified below).\\
+
+IMAGE TO BE ADDED\\
+
+Pick a vertex to be denoted $X$.\\
+Consider the 'leftmost' of the two points lying on the line and imagine rotating the polygon anticlockwise around that vertex until the next vertex lies on the line.\\
+Repeat this process with the new leftmost vertex on the line until the processes has been done $n$ times.\\
+
+You should find that our original two vertices should be the two now lying on the line (again). What is the length of the path traced by $X$?
+
+\subsection{Isomorphisms with some subset of the Natural numbers under binary XOR}
+Let $A \subseteq \mathbb{N}$ and $S \subseteq \{\{a,b,c\} : a,b,c \in A\}$ where $\forall a,b \in A \textrm{ there exists a unique } c \in A \textrm{ s.t } \{a,b,c\} \in S$.\\
+
+We define the binary operation $\bullet : S \times S \rightarrow S \textrm{ s.t } \forall \{a,b,c\} \in S \\ a \bullet b = c$
+
+Show that $(S, \bullet)$ is isomorphic to some subset of the natural number under binary XOR
+
+\subsection{Intermediate value property of derivatives}
+Given a differentiatable function $f: [a,b] \rightarrow \mathbb{R}$ $(a < b)$
+
+Is it true that given $d$ s.t $f'(a) < d < f'(b)$ there exists a $c \in [a,b]$ s.t $f'(c) = d$?
+
+\subsection{Impossible position on a Rubik's cube}
+Given a 3x3x3 Rubik's cube. Is there a position that can be reached by disassembling and reassembling the cube that isn't reachable by simply making moves from the starting position?
 
 \end{document}
 
