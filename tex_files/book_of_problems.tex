@@ -67,13 +67,6 @@ Repeat this process with the new leftmost vertex on the line until the processes
 
 You should find that our original two vertices should be the two now lying on the line (again). What is the length of the path traced by $X$?
 
-\subsection{Isomorphisms with some subset of the Natural numbers under binary XOR}
-Let $A \subseteq \mathbb{N}$ and $S \subseteq \{\{a,b,c\} : a,b,c \in A\}$ where $\forall a,b \in A \textrm{ there exists a unique } c \in A \textrm{ s.t } \{a,b,c\} \in S$.\\
-
-We define the binary operation $\bullet : S \times S \rightarrow S \textrm{ s.t } \forall \{a,b,c\} \in S \\ a \bullet b = c$
-
-Show that $(S, \bullet)$ is isomorphic to some subset of the natural number under binary XOR
-
 \subsection{Intermediate value property of derivatives}
 Given a differentiatable function $f: [a,b] \rightarrow \mathbb{R}$ $(a < b)$
 
@@ -82,5 +75,31 @@ Is it true that given $d$ s.t $f'(a) < d < f'(b)$ there exists a $c \in [a,b]$ s
 \subsection{Impossible position on a Rubik's cube}
 Given a 3x3x3 Rubik's cube. Is there a position that can be reached by disassembling and reassembling the cube that isn't reachable by simply making moves from the starting position?
 
-\end{document}
 
+\subsection{Sequence}
+Let $(t_{n})_{n}$ be a sequence of positive real numbers.\\
+
+We define the sequence $(a_{n})_{n}$ as follows\\
+
+$a_{0} = 1$ and $a_{n} = (\sum_{k=0}^{n-1}a_{k})t_{n}$\\
+
+Can you find a general formula for $a_n$ in terms only of the other sequence of $(t_n)_{n}$?\\
+
+Under what conditions on $(t_{n})_{n}$ does $(a_{n})_{n}$ converge?\\
+
+Hence, or otherwise, show that the sum of all possible products of reciprocals of natural numbers less than or equal to $n$ is $n$.
+
+
+\subsection{Show solution space of $n$th order linear differential equation has dimention $n$}
+Consider the solution space $V$ to the differential equation\\
+
+$a_{n}(x)f^{(n)}(x) + ... + a_{0}(x)f(x) = 0 \ \ \forall x \in \mathbb{R}$
+
+where $a_{0},...,a_{n}$ are differentiable functions from $\mathbb{R} \rightarrow \mathbb{R}$ and $f:\mathbb{R} \rightarrow \mathbb{R}$\\
+
+Show that $V$ has dimention $n$
+
+\subsection{Alternating sum of harmonic series}
+Show that $\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}$ converges to $\ln(2)$
+
+\end{document}
